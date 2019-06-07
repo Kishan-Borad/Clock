@@ -1,13 +1,13 @@
 console.log("script")
 
-var daillines = document.getElementsByClassName('daillines');
+var diallines = document.getElementsByClassName('diallines');
 var clockE1 = document.getElementsByClassName('clock')[0];
 
-console.log(daillines);
+console.log(diallines);
 for(var i=1; i < 60; i++)
 {
-    clockE1.innerHTML += "<div class='daillines'></div>";
-    daillines[i].style.transform = "rotate(" + 6 * i +"deg)";
+    clockE1.innerHTML += "<div class='diallines'></div>"
+    diallines[i].style.transform = "rotate(" + 6 * i +"deg)";
 }
 
 function clock(){
