@@ -18,10 +18,10 @@ function clock(){
     s = d.getSeconds(),
     date = d.getDate(),
     month = d.getMonth() + 1,
-    year = d.getFullYear(),
+    year = d.getYear(),
 
     hDeg = h * 30 + m * (360/720),
-    mDeg = m * 30 + s * (360/720),
+    mDeg = m * 6 + s * (360/3600),
     sDeg = s * 6,
 
     hE1 = document.querySelector('.hour-hand'),
@@ -32,12 +32,12 @@ function clock(){
 
 
     weekday[0] = "Sunday";
-    weekday[0] = "Monday";
-    weekday[0] = "Tuesday";
-    weekday[0] = "Wednesday";
-    weekday[0] = "Thursday";
-    weekday[0] = "Friday";
-    weekday[0] = "Saturday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
 
     var day = weekday[d.getDay()];
     hE1.style.transform = "rotate("+hDeg+"deg)";
