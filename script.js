@@ -22,7 +22,7 @@ function clock(){
 
     hDeg = h * 30 + m * (360/720),
     mDeg = m * 30 + s * (360/720),
-    hDeg = s * 6,
+    sDeg = s * 6,
 
     hE1 = document.querySelector('.hour-hand'),
     mE1 = document.querySelector('.minute-hand'),
@@ -40,9 +40,9 @@ function clock(){
     weekday[0] = "Saturday";
 
     var day = weekday[d.getDay()];
-    hE1.style.transform = "rotate("+hdeg+"deg)";
-    mE1.style.transform = "rotate("+mdeg+"deg)";
-    sE1.style.transform = "rotate("+sdeg+"deg)";
+    hE1.style.transform = "rotate("+hDeg+"deg)";
+    mE1.style.transform = "rotate("+mDeg+"deg)";
+    sE1.style.transform = "rotate("+sDeg+"deg)";
     dateE1.innerHTML = date+"/"+month+"/"+year;
     dayE1.innerHTML = day;
 

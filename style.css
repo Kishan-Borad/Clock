@@ -109,7 +109,7 @@ span{
     top: 140px;    
 }
 
-/* Minute dail lines position */
+/* Minute dial lines position */
 .diallines{
     position: absolute;
     z-index: 2;
@@ -118,10 +118,10 @@ span{
     background: #666;
     left: 50%;
     margin-left: -1px;
-    transform-origin: 50% 150%;
+    transform-origin: 50% 1000%;
 }
 
-/* Every 5th dail line position and highlight */
+/* Every 5th dial line position and highlight */
 .diallines:nth-of-type(5n) {
     position: absolute;
     z-index: 2;
@@ -130,7 +130,7 @@ span{
     background: #666;
     left: 50%;
     margin-left: -1px;
-    transform-origin: 50% 150%;
+    transform-origin: 50% 600%;
 }
 
 .date{
@@ -141,7 +141,7 @@ span{
     background-color: #888;
     text-align: center;
     line-height: 20px;
-    color: #fff;
+    color: #000;
     font-size: 11px;
     top: 80px;
     left: 50%;
@@ -160,7 +160,7 @@ span{
     background-color: #888;
     text-align: center;
     line-height: 20px;
-    color: #fff;
+    color: #000;
     font-size: 11px;
     top: 200px;
     left: 50%;
